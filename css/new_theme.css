@@ -1,0 +1,46 @@
+/*CHANGE TO DARK THEME*/
+nav, footer, .food-item, .works-cited, #register-form {
+    background-color: #1F1F1F;
+}
+
+#toggle-theme, .submit-button {
+    background-color: #0784b5;
+    border: none;
+}
+
+#header-text {
+    color: #1F1F1F;
+}
+
+nav, #register-form {
+    color: #DEDEDE;
+}
+
+body {
+    background-color: #121212;
+    color: #0784b5;
+}
+
+.essential-item a {
+    color: #39ace7;
+}
+
+.essential-item a:hover {
+    color: #0784b5;
+}
+
+.essential-item p, .attraction-address, .attraction-description, .address, .price {
+    color: #96a0a4;
+}
+
+.food-item:hover {
+    transform: scale(1.05, 1.05);
+}
+
+form h3 {
+    color: #39ace7;
+}
+
+.valid {
+    border: 4px solid #0784b5;
+}

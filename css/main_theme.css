@@ -1,0 +1,413 @@
+/*Add style for the form*/
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+
+/*GENERAL*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #064157;
+}
+
+/*NAV BAR*/
+nav {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 55px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    color: white;
+    background-color: #064157;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#logo {
+    width: 72px;
+}
+
+#menu-bar {
+    list-style: none;
+    display: flex;
+
+}
+
+#menu-bar li {
+    padding: 5px 20px;
+    text-align: center;
+}
+
+#menu-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu-bar a:hover {
+    color: #FDDD9C;
+}
+
+#toggle-theme {
+    color: #064157;
+    background-color: #FDDD9C;
+    padding: 5px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+/*HEADER*/
+#header>img {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+
+}
+
+#header-text h1 {
+    font-size: 4rem;
+    letter-spacing: 1px;
+
+}
+
+#header-text p {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    width: 100%;
+}
+
+/*CONTENT IN HOMEPAGE - TRAVEL ADVICE*/
+#homepage {
+    margin: 120px 0 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#homepage>p, #gallery>p, #food>p, #places>p, #visitor>p {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    color: #96a0a4;
+}
+
+#essentials-container {
+    margin: 50px 150px 0 150px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.essential-item {
+    margin: 0 50px 50px 50px;
+}
+
+.essential-item img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.essential-item h3 {
+    margin-bottom: 5px;
+}
+
+.essential-item a {
+    text-decoration: none;
+    color: #eca304;
+}
+
+.essential-item a:hover {
+    color: #064157;
+}
+
+/*ALL SECTIONS*/
+#places>h2, #food>h2, #gallery>h2, #visitor>h2 {
+    padding-top: 120px;
+}
+
+#places, #food, #gallery, #visitor {
+    display: none;
+    text-align: center;
+}
+
+/*SECTION 1 - PLACES*/
+figcaption {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    color: #96a0a4;
+}
+
+.attraction-item {
+    width: 70vw;
+    margin-bottom: 70px;
+    text-align: justify;
+}
+
+.attractions-container {
+    text-align: left;
+    margin: 50px 15% 0 15%;
+}
+
+.attraction-img {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+figure {
+    margin-bottom: 15px;
+}
+
+hr {
+    margin: 10px 0;
+    background-color: #bbcbd9;
+    border: none;
+    height: 1px;
+}
+
+.works-cited {
+    text-align: left;
+    font-size: 0.8rem;
+    background-color: #dfe7ef;
+    margin: 0 100px 120px 100px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.works-cited a {
+    text-decoration: none;
+    color: #1eabd5;
+}
+
+.works-cited a:hover {
+    color: #064157;
+}
+
+.works-cited li {
+    margin: 10px 0 0 0;
+}
+
+
+/*SECTION 2 - FOOD*/
+#food-container {
+    margin: 50px 100px 120px 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 40px;
+    text-align: left;
+}
+
+.food-item {
+    padding: 15px;
+    background-color: #dfe7ef;
+    border-radius: 15px;
+}
+
+.food-item:hover {
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+.food-img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.name {
+    margin-bottom: 15px;
+}
+
+.address {
+    margin-bottom: 5px;
+}
+
+.address, .price, .attraction-address, .attraction-description, .essential-item p {
+    color: #397991;
+}
+
+.fa-solid {
+    margin-right: 5px;
+}
+
+/*SECTION 3 - GALLERY*/
+#gallery-container {
+    margin: 50px 100px 120px 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+#gallery-container img, #gallery-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #064157;
+    color: white;
+    padding: 50px;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-logos {
+    display: flex;
+}
+
+.social-item {
+    margin: 10px 10px;
+}
+
+.social-item a {
+    color: white;
+}
+
+.social-item a:hover {
+    color: #FDDD9C;
+}
+
+/*SECTION 4 - LOG VISIT*/
+#visitor {
+    display: none;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#thank-you-msg {
+    margin: 50px 15vw 48vh 15vw;
+    font-style: italic;
+    font-size: 2rem;
+    display: none;
+}
+
+#register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 50px 15vw 120px 15vw;
+    background-color: rgba(204, 218, 225, 0.76);
+    border-radius: 20px;
+    padding: 50px 120px 50px 120px;
+}
+
+.personal-info {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 25vw));
+    text-align: left;
+    grid-gap: 20px 50px;
+}
+
+.error-msg {
+    display: none;
+    color: red;
+    font-size: small;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.marketing {
+    margin: 30px 0 0 0;
+}
+
+.comment {
+    margin: 30px 0 30px 0;
+}
+
+fieldset {
+    text-align: left;
+    border: 0
+}
+
+.personal-info input {
+    padding: 7px;
+}
+
+.marketing-options label {
+    margin: 0 5px 0 5px;
+}
+
+.marketing-options input {
+    margin-right: 5px;
+}
+
+.marketing-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.marketing legend, .comment label {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#submit-button {
+    background-color: #064157;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.valid {
+    border: 2px solid green;
+}
+
+.invalid {
+    border: 2px solid red;
+}
+
+#register-form {
+    border: none;
+}
+
+
+@media all and (min-width: 1600px) {
+    #essentials-container {
+        margin: 50px 350px 0 350px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #register-form {
+        margin: 50px 0 120px 0;
+    }
+
+}
+
+
